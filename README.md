@@ -1,6 +1,12 @@
-# Alphabets
+# crx-alphabets
 
+- [Alphabets](#alphabets)
 - [Icons](#icons)
+
+## Alphabets
+
+- Belarusian
+  - https://ru.wikipedia.org/wiki/Белорусский_алфавит
 
 ## Icons
 
