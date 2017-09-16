@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+body {
+  width: 200px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  width: 33.3%;
+}
+
+select {
+  outline: 0;
+}
+
+button {
+  outline: 0;
+}
+
+#copy-buttons-table {
+  margin-top: 8px;
+}

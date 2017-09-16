@@ -2,10 +2,26 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Google Chrome Extension</title>
-    <script src="popup.js"></script>
+    <title>Alphabets</title>
+    <link rel="stylesheet" href="css/popup.css">
+    <script src="js/popup.js"></script>
 </head>
 <body>
-    <h1>Google Chrome Extension</h1>
+    <select id="language-select">
+        <option value="english">English</option>
+        <option value="russian">Russian</option>
+    </select>
+    <table id="copy-buttons-table">
+        <tr>
+            <td>#</td>
+            <td>
+                <button id="copy-lowercase-letters-button">Copy</button>
+            </td>
+            <td>
+                <button id="copy-uppercase-letters-button">Copy</button>
+            </td>
+        </tr>
+    </table>
+    <table id="alphabet-table"></table>
 </body>
 </html>
