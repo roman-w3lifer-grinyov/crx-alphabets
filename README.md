@@ -11,6 +11,8 @@
 
 - Belarusian
   - https://ru.wikipedia.org/wiki/Белорусский_алфавит
+- French
+  - https://en.wikipedia.org/wiki/French_orthography
 - Spanish
   - https://en.wikipedia.org/wiki/Spanish_orthography#Alphabet_in_Spanish
 
