@@ -13,6 +13,8 @@
   - https://ru.wikipedia.org/wiki/Белорусский_алфавит
 - French
   - https://en.wikipedia.org/wiki/French_orthography
+- Portuguese
+  - https://en.wikipedia.org/wiki/Portuguese_orthography#Letter_names_and_pronunciations
 - Spanish
   - https://en.wikipedia.org/wiki/Spanish_orthography#Alphabet_in_Spanish
 
