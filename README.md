@@ -19,6 +19,8 @@
   - https://en.wikipedia.org/wiki/Greek_alphabet#Letters
 - Portuguese
   - https://en.wikipedia.org/wiki/Portuguese_orthography#Letter_names_and_pronunciations
+- Serbian Cyrillic
+  - https://en.wikipedia.org/wiki/Serbian_Cyrillic_alphabet#Modern_alphabet
 - Spanish
   - https://en.wikipedia.org/wiki/Spanish_orthography#Alphabet_in_Spanish
 
