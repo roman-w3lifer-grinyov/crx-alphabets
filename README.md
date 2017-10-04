@@ -15,6 +15,8 @@
   - https://en.wikipedia.org/wiki/French_orthography#Alphabet
 - German
   - https://en.wikipedia.org/wiki/German_orthography#Alphabet
+- Greek
+  - https://en.wikipedia.org/wiki/Greek_alphabet#Letters
 - Portuguese
   - https://en.wikipedia.org/wiki/Portuguese_orthography#Letter_names_and_pronunciations
 - Spanish
