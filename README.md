@@ -17,6 +17,8 @@
   - https://en.wikipedia.org/wiki/German_orthography#Alphabet
 - Greek
   - https://en.wikipedia.org/wiki/Greek_alphabet#Letters
+- Italian
+  - https://en.wikipedia.org/wiki/Italian_orthography#Alphabet
 - Portuguese
   - https://en.wikipedia.org/wiki/Portuguese_orthography#Letter_names_and_pronunciations
 - Serbian Cyrillic
