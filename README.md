@@ -25,6 +25,8 @@
   - https://en.wikipedia.org/wiki/Serbian_Cyrillic_alphabet#Modern_alphabet
 - Spanish
   - https://en.wikipedia.org/wiki/Spanish_orthography#Alphabet_in_Spanish
+- Turkish
+  - https://en.wikipedia.org/wiki/Turkish_alphabet#Letters
 
 ## Icons
 
