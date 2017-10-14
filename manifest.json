@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Alphabets",
-  "description": "Belarusian, English, French, German, Greek, Italian, Portuguese, Russian, Serbian Cyrillic, Spanish, Spanish, Ukrainian uppercase and lowercase alphabets with ordinal numbers of letters and copying feature",
+  "description": "Uppercase and lowercase alphabets with ordinal numbers of letters and copying feature",
   "version": "1.0.1",
   "icons": {
     "16": "img/16x16.png",
