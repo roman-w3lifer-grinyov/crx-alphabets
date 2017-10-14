@@ -27,6 +27,8 @@
   - https://en.wikipedia.org/wiki/Spanish_orthography#Alphabet_in_Spanish
 - Turkish
   - https://en.wikipedia.org/wiki/Turkish_alphabet#Letters
+- Ukrainian
+  - https://en.wikipedia.org/wiki/Ukrainian_alphabet#Alphabet
 
 ## Icons
 
