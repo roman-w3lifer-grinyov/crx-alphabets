@@ -2,6 +2,8 @@
 
 - Chrome Web Store: https://chrome.google.com/webstore/detail/bhpjlplbnifhpolicjigaghdchamocee
 
+![Example](img/screenshots/originals/example.png)
+
 ---
 
 - [Alphabets](#alphabets)

@@ -19,25 +19,36 @@ window.addEventListener('DOMContentLoaded', function () {
   languageSelect.addEventListener('change', showAlphabet);
 
   document
-    .getElementById('copy-lowercase-letters-button')
+    .getElementById('copy-serial-numbers-button')
     .addEventListener('click', function () {
-      var letterCells = alphabetTable.querySelectorAll('td:nth-child(2)');
-      var letters = '';
-      for (var i = 0; i < letterCells.length; i++) {
-        letters += letterCells[i].textContent + '\n';
+      var characterCells = alphabetTable.querySelectorAll('td:nth-child(1)');
+      var characters = '';
+      for (var i = 0; i < characterCells.length; i++) {
+        characters += characterCells[i].textContent + '\n';
       }
-      app.methods.copyTextToClipboard(letters);
+      app.methods.copyTextToClipboard(characters);
     });
 
   document
     .getElementById('copy-uppercase-letters-button')
     .addEventListener('click', function () {
-      var letterCells = alphabetTable.querySelectorAll('td:nth-child(3)');
-      var letters = '';
-      for (var i = 0; i < letterCells.length; i++) {
-        letters += letterCells[i].textContent + '\n';
+      var characterCells = alphabetTable.querySelectorAll('td:nth-child(2)');
+      var characters = '';
+      for (var i = 0; i < characterCells.length; i++) {
+        characters += characterCells[i].textContent + '\n';
       }
-      app.methods.copyTextToClipboard(letters);
+      app.methods.copyTextToClipboard(characters);
+    });
+
+  document
+    .getElementById('copy-lowercase-letters-button')
+    .addEventListener('click', function () {
+      var characterCells = alphabetTable.querySelectorAll('td:nth-child(3)');
+      var characters = '';
+      for (var i = 0; i < characterCells.length; i++) {
+        characters += characterCells[i].textContent + '\n';
+      }
+      app.methods.copyTextToClipboard(characters);
     });
 
   // Initialization
@@ -63,18 +74,18 @@ window.addEventListener('DOMContentLoaded', function () {
       var tr = document.createElement('tr');
 
       var serialCell = document.createElement('td');
-      serialCell.textContent = i + 1;
+      serialCell.textContent = '' + (i + 1);
       tr.appendChild(serialCell);
-
-      var lowercaseLetterCell = document.createElement('td');
-      lowercaseLetterCell.textContent =
-        currentSelectedLanguage.lowercaseLetters[i];
-      tr.appendChild(lowercaseLetterCell);
 
       var uppercaseLetterCell = document.createElement('td');
       uppercaseLetterCell.textContent =
         currentSelectedLanguage.uppercaseLetters[i];
       tr.appendChild(uppercaseLetterCell);
+
+      var lowercaseLetterCell = document.createElement('td');
+      lowercaseLetterCell.textContent =
+        currentSelectedLanguage.lowercaseLetters[i];
+      tr.appendChild(lowercaseLetterCell);
 
       alphabetTable.appendChild(tr);
     }
