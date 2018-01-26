@@ -4,8 +4,6 @@
 
 ![Example](img/screenshots/originals/example.png)
 
----
-
 - [Alphabets](#alphabets)
 - [Icons](#icons)
 
