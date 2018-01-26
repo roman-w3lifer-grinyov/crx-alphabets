@@ -9,7 +9,12 @@ body {
   text-align: center;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 table {
+  border-collapse: collapse;
   width: 100%;
 }
 
@@ -23,8 +28,4 @@ select {
 
 button {
   outline: 0;
-}
-
-#copy-buttons-table {
-  margin-top: 8px;
 }

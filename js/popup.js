@@ -12,44 +12,36 @@ window.addEventListener('DOMContentLoaded', function () {
   // Elements
 
   var languageSelect = document.getElementById('language-select');
+  var copyButtonsTable = document.getElementById('copy-buttons-table');
   var alphabetTable = document.getElementById('alphabet-table');
 
   // Events
 
   languageSelect.addEventListener('change', showAlphabet);
 
-  document
-    .getElementById('copy-serial-numbers-button')
-    .addEventListener('click', function () {
-      var characterCells = alphabetTable.querySelectorAll('td:nth-child(1)');
-      var characters = '';
-      for (var i = 0; i < characterCells.length; i++) {
-        characters += characterCells[i].textContent + '\n';
-      }
-      app.methods.copyTextToClipboard(characters);
-    });
+  var copyButtons = copyButtonsTable.querySelectorAll('button');
+  for (var i = 0; i < copyButtons.length; i++) {
+    copyButtons[i].addEventListener('click', copyCharacters(i));
+  }
 
-  document
-    .getElementById('copy-uppercase-letters-button')
-    .addEventListener('click', function () {
-      var characterCells = alphabetTable.querySelectorAll('td:nth-child(2)');
+  function copyCharacters(index) {
+    return function () {
+      var tdSelector = 'td:nth-child(' + (index + 1) +')';
+      console.log(index);
+      var characterCells = alphabetTable.querySelectorAll(tdSelector);
       var characters = '';
-      for (var i = 0; i < characterCells.length; i++) {
-        characters += characterCells[i].textContent + '\n';
+      for (var j = 0; j < characterCells.length; j++) {
+        characters += characterCells[j].textContent + '\n';
       }
       app.methods.copyTextToClipboard(characters);
-    });
-
-  document
-    .getElementById('copy-lowercase-letters-button')
-    .addEventListener('click', function () {
-      var characterCells = alphabetTable.querySelectorAll('td:nth-child(3)');
-      var characters = '';
-      for (var i = 0; i < characterCells.length; i++) {
-        characters += characterCells[i].textContent + '\n';
-      }
-      app.methods.copyTextToClipboard(characters);
-    });
+      var tdWithNotificationText =
+        copyButtonsTable.querySelector('tr:first-child ' + tdSelector);
+      tdWithNotificationText.classList.remove('invisible');
+      setTimeout(function () {
+        tdWithNotificationText.classList.add('invisible');
+      }, 1000);
+    }
+  }
 
   // Initialization
 
