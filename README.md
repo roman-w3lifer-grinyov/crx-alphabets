@@ -37,3 +37,4 @@
 ## Icons
 
 - https://iconfinder.com/icons/1553029/a_alphabet_letter_letters_red_icon
+- https://iconfinder.com/icons/172587/copy_icon

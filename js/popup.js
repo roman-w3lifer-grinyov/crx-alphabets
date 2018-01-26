@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   languageSelect.addEventListener('change', showAlphabet);
 
-  var copyButtons = copyButtonsTable.querySelectorAll('button');
+  var copyButtons = copyButtonsTable.querySelectorAll('.copy-button');
   for (var i = 0; i < copyButtons.length; i++) {
     copyButtons[i].addEventListener('click', copyCharacters(i));
   }

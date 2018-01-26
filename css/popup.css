@@ -5,7 +5,7 @@
 }
 
 body {
-  width: 200px;
+  width: 150px;
   text-align: center;
 }
 
@@ -26,6 +26,10 @@ select {
   outline: 0;
 }
 
-button {
-  outline: 0;
+.copy-button {
+  background: url('../img/icons/copy/16x16.png') center no-repeat;
+  cursor: pointer;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
 }
