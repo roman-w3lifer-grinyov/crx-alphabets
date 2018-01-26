@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Alphabet",
+  "name": "Alphabets",
   "description": "Uppercase and lowercase alphabets with ordinal numbers of letters and copying feature",
   "version": "1.0.2",
   "icons": {
@@ -14,7 +14,7 @@
       "48": "img/icons/a-alphabet-letter-letters-red/48x48.png",
       "128": "img/icons/a-alphabet-letter-letters-red/128x128.png"
     },
-    "default_title": "Alphabet",
+    "default_title": "Alphabets",
     "default_popup": "html/popup.html"
   },
   "permissions": [

@@ -1,4 +1,4 @@
-# Alphabet
+# Alphabets
 
 - Chrome Web Store: https://chrome.google.com/webstore/detail/bhpjlplbnifhpolicjigaghdchamocee
 
