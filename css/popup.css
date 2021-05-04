@@ -19,7 +19,9 @@ table {
 }
 
 td {
+  cursor: pointer;
   width: 33.3%;
+  padding: 3px 0;
 }
 
 select {

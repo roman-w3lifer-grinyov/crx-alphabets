@@ -24,6 +24,13 @@ window.addEventListener('DOMContentLoaded', function () {
     copyButtons[i].addEventListener('click', copyCharacters(i));
   }
 
+  alphabetTable.addEventListener('click', (e) => {
+    if (e.target.tagName !== 'TD') {
+      return false;
+    }
+    app.methods.copyTextToClipboard(e.target.textContent);
+  });
+
   function copyCharacters(index) {
     return () => {
       const tdSelector = 'td:nth-child(' + (index + 1) +')';
