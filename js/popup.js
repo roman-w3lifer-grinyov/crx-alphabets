@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', function () {
     app.methods.copyTextToClipboard(e.target.textContent);
     const span = document.createElement('span');
     span.classList.add('copied');
-    span.textContent = 'Copied!';
+    span.textContent = 'Copied';
     e.target.insertBefore(span, e.target.firstChild);
     setTimeout(() => e.target.removeChild(span), app.settings.hideTooltipDelay);
   });
@@ -52,6 +52,19 @@ window.addEventListener('DOMContentLoaded', function () {
   }
 
   // Initialization
+
+  const optionElement = document.createElement('option');
+  for (let alphabet in app.alphabets) {
+    const option = optionElement.cloneNode();
+    option.value = alphabet;
+    if (alphabet === 'english') {
+      option.setAttribute('selected', '');
+    }
+    alphabet = alphabet.replace(/([A-Z])/g, ' $1');
+    alphabet = alphabet.charAt(0).toUpperCase() + alphabet.slice(1);
+    option.textContent = alphabet;
+    languageSelect.appendChild(option);
+  }
 
   chrome.storage.sync.get('selectedLanguage', (storage) => {
     if (storage.selectedLanguage) {
