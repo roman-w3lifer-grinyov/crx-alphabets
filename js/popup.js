@@ -11,72 +11,64 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // Elements
 
-  var languageSelect = document.getElementById('language-select');
-  var copyButtonsTable = document.getElementById('copy-buttons-table');
-  var alphabetTable = document.getElementById('alphabet-table');
+  const languageSelect = document.getElementById('language-select');
+  const copyButtonsTable = document.getElementById('copy-buttons-table');
+  const alphabetTable = document.getElementById('alphabet-table');
 
   // Events
 
   languageSelect.addEventListener('change', showAlphabet);
 
-  var copyButtons = copyButtonsTable.querySelectorAll('.copy-button');
-  for (var i = 0; i < copyButtons.length; i++) {
+  const copyButtons = copyButtonsTable.querySelectorAll('.copy-button');
+  for (let i = 0; i < copyButtons.length; i++) {
     copyButtons[i].addEventListener('click', copyCharacters(i));
   }
 
   function copyCharacters(index) {
-    return function () {
-      var tdSelector = 'td:nth-child(' + (index + 1) +')';
-      console.log(index);
-      var characterCells = alphabetTable.querySelectorAll(tdSelector);
-      var characters = '';
-      for (var j = 0; j < characterCells.length; j++) {
+    return () => {
+      const tdSelector = 'td:nth-child(' + (index + 1) +')';
+      const characterCells = alphabetTable.querySelectorAll(tdSelector);
+      let characters = '';
+      for (let j = 0; j < characterCells.length; j++) {
         characters += characterCells[j].textContent + '\n';
       }
       app.methods.copyTextToClipboard(characters);
-      var tdWithNotificationText =
-        copyButtonsTable.querySelector('tr:first-child ' + tdSelector);
+      const tdWithNotificationText = copyButtonsTable.querySelector('tr:first-child ' + tdSelector);
       tdWithNotificationText.classList.remove('invisible');
-      setTimeout(function () {
-        tdWithNotificationText.classList.add('invisible');
-      }, 1000);
+      setTimeout(() => tdWithNotificationText.classList.add('invisible'), 1000);
     }
   }
 
   // Initialization
 
-  chrome.storage.sync.get('selectedLanguage', function (storage) {
+  chrome.storage.sync.get('selectedLanguage', (storage) => {
     if (storage.selectedLanguage) {
       languageSelect.value = storage.selectedLanguage;
-      showAlphabet();
-    } else {
-      showAlphabet();
     }
+    showAlphabet();
   });
 
   function showAlphabet() {
 
-    var currentSelectedLanguage = app.alphabets[languageSelect.value];
+    const currentSelectedLanguage = app.alphabets[languageSelect.value];
 
     chrome.storage.sync.set({'selectedLanguage': languageSelect.value});
 
     alphabetTable.innerHTML = '';
 
-    for (var i = 0; i < currentSelectedLanguage.uppercaseLetters.length; i++) {
-      var tr = document.createElement('tr');
+    for (let i = 0; i < currentSelectedLanguage.uppercaseLetters.length; i++) {
+      const tr = document.createElement('tr');
 
-      var serialCell = document.createElement('td');
+      const serialCell = document.createElement('td');
       serialCell.textContent = '' + (i + 1);
       tr.appendChild(serialCell);
 
-      var uppercaseLetterCell = document.createElement('td');
-      uppercaseLetterCell.textContent =
-        currentSelectedLanguage.uppercaseLetters[i];
+      const uppercaseLetterCell = document.createElement('td');
+      uppercaseLetterCell.textContent = currentSelectedLanguage.uppercaseLetters[i];
       tr.appendChild(uppercaseLetterCell);
 
-      var lowercaseLetterCell = document.createElement('td');
-      lowercaseLetterCell.textContent =
-        currentSelectedLanguage.lowercaseLetters[i];
+      const lowercaseLetterCell = document.createElement('td');
+      lowercaseLetterCell.textContent = currentSelectedLanguage.lowercaseLetters[i];
       tr.appendChild(lowercaseLetterCell);
 
       alphabetTable.appendChild(tr);
