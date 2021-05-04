@@ -22,6 +22,24 @@ td {
   cursor: pointer;
   width: 33.3%;
   padding: 3px 0;
+  position: relative;
+}
+
+td:hover {
+  background: #e7eaed;
+}
+
+td > .copied {
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  padding: 3px 0;
+}
+
+table + table > tr:first-child > td > .copied {
+  top: -120%;
 }
 
 select {

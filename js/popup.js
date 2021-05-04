@@ -29,6 +29,11 @@ window.addEventListener('DOMContentLoaded', function () {
       return false;
     }
     app.methods.copyTextToClipboard(e.target.textContent);
+    const span = document.createElement('span');
+    span.classList.add('copied');
+    span.textContent = 'Copied!';
+    e.target.insertBefore(span, e.target.firstChild);
+    setTimeout(() => e.target.removeChild(span), app.settings.hideTooltipDelay);
   });
 
   function copyCharacters(index) {
@@ -42,7 +47,7 @@ window.addEventListener('DOMContentLoaded', function () {
       app.methods.copyTextToClipboard(characters);
       const tdWithNotificationText = copyButtonsTable.querySelector('tr:first-child ' + tdSelector);
       tdWithNotificationText.classList.remove('invisible');
-      setTimeout(() => tdWithNotificationText.classList.add('invisible'), 1000);
+      setTimeout(() => tdWithNotificationText.classList.add('invisible'), app.settings.hideTooltipDelay);
     }
   }
 
