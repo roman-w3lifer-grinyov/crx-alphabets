@@ -9,8 +9,9 @@ body {
   text-align: center;
 }
 
-.invisible {
-  visibility: hidden;
+select {
+  margin-bottom: 8px;
+  outline: 0;
 }
 
 table {
@@ -21,35 +22,8 @@ table {
 td {
   cursor: pointer;
   width: 33.3%;
-  padding: 3px 0;
-  position: relative;
 }
 
 td:hover {
-  background: #e7eaed;
-}
-
-td > .copied {
-  background-color: #fff;
-  width: 100%;
-  position: absolute;
-  top: -100%;
-  left: 0;
-  padding: 3px 0;
-}
-
-table + table > tr:first-child > td > .copied {
-  top: -120%;
-}
-
-select {
-  outline: 0;
-}
-
-.copy-button {
-  background: url('../img/icons/copy/16x16.png') center no-repeat;
-  cursor: pointer;
-  display: inline-block;
-  height: 16px;
-  width: 16px;
+  background: #eef1f5;
 }

@@ -9,6 +9,8 @@
 
 window.addEventListener('DOMContentLoaded', function () {
 
+  const toolTipText = 'Copied';
+
   // Elements
 
   const languageSelect = document.getElementById('language-select');
@@ -21,19 +23,17 @@ window.addEventListener('DOMContentLoaded', function () {
 
   const copyButtons = copyButtonsTable.querySelectorAll('.copy-button');
   for (let i = 0; i < copyButtons.length; i++) {
-    copyButtons[i].addEventListener('click', copyCharacters(i));
+    copyButtons[i].addEventListener('click', copyCharacters.call(copyButtons[i], i));
   }
 
   alphabetTable.addEventListener('click', (e) => {
     if (e.target.tagName !== 'TD') {
       return false;
     }
-    app.methods.copyTextToClipboard(e.target.textContent);
-    const span = document.createElement('span');
-    span.classList.add('copied');
-    span.textContent = 'Copied';
-    e.target.insertBefore(span, e.target.firstChild);
-    setTimeout(() => e.target.removeChild(span), app.settings.hideTooltipDelay);
+    const letter = e.target.textContent;
+    app.methods.copyTextToClipboard(letter);
+    e.target.textContent = toolTipText;
+    setTimeout(() => e.target.textContent = letter, app.settings.hideTooltipDelay);
   });
 
   function copyCharacters(index) {
@@ -45,9 +45,9 @@ window.addEventListener('DOMContentLoaded', function () {
         characters += characterCells[j].textContent + '\n';
       }
       app.methods.copyTextToClipboard(characters);
-      const tdWithNotificationText = copyButtonsTable.querySelector('tr:first-child ' + tdSelector);
-      tdWithNotificationText.classList.remove('invisible');
-      setTimeout(() => tdWithNotificationText.classList.add('invisible'), app.settings.hideTooltipDelay);
+      const img = this.firstElementChild;
+      this.textContent = toolTipText;
+      setTimeout(() => this.replaceChildren(img), app.settings.hideTooltipDelay);
     }
   }
 
