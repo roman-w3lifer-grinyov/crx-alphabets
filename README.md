@@ -1,4 +1,4 @@
-# [Alphabet](https://chrome.google.com/webstore/detail/bhpjlplbnifhpolicjigaghdchamocee)
+# [Alphabets](https://chrome.google.com/webstore/detail/bhpjlplbnifhpolicjigaghdchamocee)
 
 - [Installation for developers (for Linux users)](#installation-for-developers-for-linux-users)
 - [Sources](#sources)
@@ -7,7 +7,7 @@
 
 ---
 
-![Alphabet - Example](img/screenshots/originals/example.png)
+![Alphabets - Example](img/screenshots/originals/example.png)
 
 ---
 
