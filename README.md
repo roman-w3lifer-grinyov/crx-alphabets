@@ -7,7 +7,7 @@
 
 ---
 
-![Alphabets - Example](img/screenshots/originals/example.png)
+![Alphabets - Example](img/screenshots/1280x800/example.png)
 
 ---
 
