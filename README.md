@@ -24,8 +24,8 @@
 
 ### Icons
 
-- [A, letter, red, alphabet, letters icon](https://iconfinder.com/icons/1553029/a_alphabet_letter_letters_red_icon)
-- [Copy icon](https://iconfinder.com/icons/172587/copy_icon)
+- [A](https://flaticon.com/free-icon/a_3564016)
+- [Copy](https://iconfinder.com/icons/172587/copy_icon)
 
 ### Alphabets
 

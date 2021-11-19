@@ -19,8 +19,9 @@ table {
   width: 100%;
 }
 
+th,
 td {
-  cursor: pointer;
+  cursor: copy;
   width: 33.3%;
 }
 

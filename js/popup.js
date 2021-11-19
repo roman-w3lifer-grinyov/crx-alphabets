@@ -33,7 +33,11 @@ window.addEventListener('DOMContentLoaded', function () {
     const letter = e.target.textContent;
     app.methods.copyTextToClipboard(letter);
     e.target.textContent = toolTipText;
-    setTimeout(() => e.target.textContent = letter, app.settings.hideTooltipDelay);
+    e.target.style.color = '#fb0000';
+    setTimeout(() => {
+      e.target.textContent = letter;
+      e.target.style.color = 'inherit';
+    }, app.settings.hideTooltipDelay);
   });
 
   function copyCharacters(index) {
@@ -47,7 +51,11 @@ window.addEventListener('DOMContentLoaded', function () {
       app.methods.copyTextToClipboard(characters);
       const img = this.firstElementChild;
       this.textContent = toolTipText;
-      setTimeout(() => this.replaceChildren(img), app.settings.hideTooltipDelay);
+      this.style.color = '#fb0000';
+      setTimeout(() => {
+        this.replaceChildren(img);
+        this.style.color = 'inherit';
+      }, app.settings.hideTooltipDelay);
     }
   }
 
