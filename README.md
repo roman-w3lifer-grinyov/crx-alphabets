@@ -24,7 +24,7 @@
 
 ### Icons
 
-- [A](https://flaticon.com/free-icon/a_3564016)
+- [A](https://flaticon.com/free-icon/a_3522207)
 - [Copy](https://iconfinder.com/icons/172587/copy_icon)
 
 ### Alphabets
