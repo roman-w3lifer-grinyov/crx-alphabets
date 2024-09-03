@@ -1,4 +1,3 @@
-;'use strict';
 
 const app = {
   alphabets: {
@@ -55,13 +54,13 @@ const app = {
     hideTooltipDelay: 1000,
   },
   methods: {
-    copyTextToClipboard: function (text) {
-      let textarea = document.createElement('textarea');
-      textarea.value = text;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand('copy');
-      document.body.removeChild(textarea);
+    copyTextToClipboard: text => {
+      let textarea = document.createElement('textarea')
+      textarea.value = text
+      document.body.appendChild(textarea)
+      textarea.select()
+      document.execCommand('copy')
+      document.body.removeChild(textarea)
     },
   },
-};
+}

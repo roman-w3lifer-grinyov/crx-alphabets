@@ -1,6 +1,6 @@
-# [Alphabets](https://chrome.google.com/webstore/detail/bhpjlplbnifhpolicjigaghdchamocee)
+# [Alphabets](https://chromewebstore.google.com/detail/alphabets/bhpjlplbnifhpolicjigaghdchamocee)
 
-- [Chrome Web Store](https://chrome.google.com/webstore/detail/bhpjlplbnifhpolicjigaghdchamocee)
+- [Chrome Web Store](https://chromewebstore.google.com/detail/alphabets/bhpjlplbnifhpolicjigaghdchamocee)
 - [Installation for developers (for Linux users)](#installation-for-developers-for-linux-users)
 - [Sources](#sources)
   - [Icons](#icons)
@@ -25,14 +25,10 @@
 
 ### Icons
 
-- [A](https://flaticon.com/free-icon/a_3522207)
-- [Copy](https://iconfinder.com/icons/172587/copy_icon)
+- [A](https://www.flaticon.com/free-icon/a_3522207)
+- [Copy](https://www.iconfinder.com/icons/172587/copy_icon)
 
 ### Alphabets
-
-- [List of languages by the number of countries in which they are recognized as an official language](https://en.wikipedia.org/wiki/List_of_languages_by_the_number_of_countries_in_which_they_are_recognized_as_an_official_language)
-
----
 
 - Belarusian
   - [Belarusian alphabet - Letters](https://en.wikipedia.org/wiki/Belarusian_alphabet#Letters)
