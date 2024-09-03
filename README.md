@@ -1,6 +1,6 @@
-# [Alphabets](https://chromewebstore.google.com/detail/alphabets/bhpjlplbnifhpolicjigaghdchamocee)
+# [Alphabets](https://chromewebstore.google.com/detail/bhpjlplbnifhpolicjigaghdchamocee)
 
-- [Chrome Web Store](https://chromewebstore.google.com/detail/alphabets/bhpjlplbnifhpolicjigaghdchamocee)
+- [Chrome Web Store](https://chromewebstore.google.com/detail/bhpjlplbnifhpolicjigaghdchamocee)
 - [Installation for developers (for Linux users)](#installation-for-developers-for-linux-users)
 - [Sources](#sources)
   - [Icons](#icons)
